@@ -169,4 +169,4 @@ public abstract class StringHelper {
         Matcher m = p.matcher(str);
         return m.replaceAll("").trim();
     }
-}
+} 
