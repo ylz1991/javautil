@@ -25,36 +25,36 @@ public class CalendarUtil {
 	}
 
 	/**
-	 * »ñµÃËùÔÚĞÇÆÚµÄµÚÒ»Ìì
+	 * è·å¾—æ‰€åœ¨æ˜ŸæœŸçš„ç¬¬ä¸€å¤©
 	 */
 	public static Date getFirstDateByWeek(Date date) {
 
 		Calendar now = Calendar.getInstance();
 		now.setTime(date);
 		int today = now.get(Calendar.DAY_OF_WEEK);
-		int first_day_of_week = now.get(Calendar.DATE) + 2 - today; // ĞÇÆÚÒ»
+		int first_day_of_week = now.get(Calendar.DATE) + 2 - today; // æ˜ŸæœŸä¸€
 		now.set(now.DATE, first_day_of_week);
 		return now.getTime();
 	}
 
 	/**
-	 * »ñµÃËùÔÚĞÇÆÚµÄ×îºóÒ»Ìì
+	 * è·å¾—æ‰€åœ¨æ˜ŸæœŸçš„æœ€åä¸€å¤©
 	 */
 	public static Date getLastDateByWeek(Date date) {
 
 		Calendar now = Calendar.getInstance();
 		now.setTime(date);
 		int today = now.get(Calendar.DAY_OF_WEEK);
-		int first_day_of_week = now.get(Calendar.DATE) + 2 - today; // ĞÇÆÚÒ»
-		int last_day_of_week = first_day_of_week + 6; // ĞÇÆÚÈÕ
+		int first_day_of_week = now.get(Calendar.DATE) + 2 - today; // æ˜ŸæœŸä¸€
+		int last_day_of_week = first_day_of_week + 6; // æ˜ŸæœŸæ—¥
 		now.set(now.DATE, last_day_of_week);
 		return now.getTime();
 	}
 
 	/**
-	 * »ñµÃËùÔÚÔÂ·İµÄ×îºóÒ»Ìì
-	 * @param µ±Ç°ÔÂ·İËùÔÚµÄÊ±¼ä
-	 * @return ÔÂ·İµÄ×îºóÒ»Ìì
+	 * è·å¾—æ‰€åœ¨æœˆä»½çš„æœ€åä¸€å¤©
+	 * @param å½“å‰æœˆä»½æ‰€åœ¨çš„æ—¶é—´
+	 * @return æœˆä»½çš„æœ€åä¸€å¤©
 	 */
 	public static Date getLastDateByMonth(Date date) {
 		Calendar now = Calendar.getInstance();
@@ -69,9 +69,9 @@ public class CalendarUtil {
 	}
 
 	/**
-	 * »ñµÃËùÔÚÔÂ·İµÄµÚÒ»Ìì
-	 * @param µ±Ç°ÔÂ·İËùÔÚµÄÊ±¼ä 
-	 * @return ÔÂ·İµÄµÚÒ»Ìì
+	 * è·å¾—æ‰€åœ¨æœˆä»½çš„ç¬¬ä¸€å¤©
+	 * @param å½“å‰æœˆä»½æ‰€åœ¨çš„æ—¶é—´ 
+	 * @return æœˆä»½çš„ç¬¬ä¸€å¤©
 	 */
 	public static Date getFirstDateByMonth(Date date) {
 		
