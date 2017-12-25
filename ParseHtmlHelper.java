@@ -22,4 +22,4 @@ public class ParseHtmlHelper {
             throw new RuntimeException("parsing html io exception");
         }
     }
-}
+} 
