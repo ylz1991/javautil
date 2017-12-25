@@ -129,4 +129,4 @@ public class ImageDataHelper {
         }
         return imgSize;
     }
-}
+} 
